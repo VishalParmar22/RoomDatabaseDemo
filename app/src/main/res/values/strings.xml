@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RoomDatabaseDemo</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="add_salary">Add Salary</string>
+    <string name="hint_full_name">Enter Your Full Name</string>
+    <string name="hint_address">Enter Your Address</string>
+    <string name="hint_photo_url">Enter Your Photo Url</string>
+    <string name="hint_emp_salary">Enter Employee Salary</string>
+    <string name="hint_date">Enter Salary Date</string>
+    <string name="employee_detail">Employee List</string>
+    <string name="created_at">Created At</string>
+    <string name="modified_at">Modified At</string>
+    <string name="salary_detail">Employee Salary Details</string>
+    <string name="salary">Emp Salary - </string>
+    <string name="salary_month">Salary Month</string>
+</resources>

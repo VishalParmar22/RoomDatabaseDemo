@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvSalaryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/salary"
+                app:layout_constraintBottom_toTopOf="@+id/tvMonthLabel"
+                app:layout_constraintEnd_toStartOf="@+id/tvSalaryEmp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSalaryEmp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSalaryLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvSalaryLabel"
+                app:layout_constraintTop_toTopOf="@+id/tvSalaryLabel"
+                tools:text="@string/salary" />
+
+            <TextView
+                android:id="@+id/tvMonthLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/salary_month"
+                app:layout_constraintBottom_toTopOf="@+id/tvCreatedAtLabel"
+                app:layout_constraintEnd_toEndOf="@+id/tvSalaryLabel"
+                app:layout_constraintStart_toStartOf="@+id/tvSalaryLabel"
+                app:layout_constraintTop_toBottomOf="@+id/tvSalaryLabel" />
+
+            <TextView
+                android:id="@+id/tvSalaryEmpMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/tvMonthLabel"
+                app:layout_constraintEnd_toEndOf="@+id/tvSalaryEmp"
+                app:layout_constraintStart_toStartOf="@+id/tvSalaryEmp"
+                app:layout_constraintTop_toTopOf="@+id/tvMonthLabel"
+                tools:text="@string/salary_month" />
+
+
+            <TextView
+                android:id="@+id/tvCreatedAtLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/created_at"
+                app:layout_constraintBottom_toTopOf="@+id/tvModifiedAtLabel"
+                app:layout_constraintEnd_toEndOf="@+id/tvMonthLabel"
+                app:layout_constraintStart_toStartOf="@+id/tvMonthLabel"
+                app:layout_constraintTop_toBottomOf="@+id/tvMonthLabel" />
+
+            <TextView
+                android:id="@+id/tvCreatedAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCreatedAtLabel"
+                app:layout_constraintEnd_toEndOf="@+id/tvSalaryEmpMonth"
+                app:layout_constraintStart_toStartOf="@+id/tvSalaryEmpMonth"
+                app:layout_constraintTop_toTopOf="@+id/tvCreatedAtLabel"
+                tools:text="CreatedAt" />
+
+            <TextView
+                android:id="@+id/tvModifiedAtLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/modified_at"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvCreatedAtLabel"
+                app:layout_constraintStart_toStartOf="@+id/tvCreatedAtLabel"
+                app:layout_constraintTop_toBottomOf="@+id/tvCreatedAtLabel" />
+
+            <TextView
+                android:id="@+id/tvModifiedAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/tvModifiedAtLabel"
+                app:layout_constraintEnd_toEndOf="@+id/tvCreatedAt"
+                app:layout_constraintStart_toStartOf="@+id/tvCreatedAt"
+                app:layout_constraintTop_toTopOf="@+id/tvModifiedAtLabel"
+                tools:text="updatedAt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

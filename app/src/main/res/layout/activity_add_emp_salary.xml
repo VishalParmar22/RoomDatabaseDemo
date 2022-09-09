@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.AddEmployeeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edtEmpId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="text"
+            android:enabled="false"
+            android:importantForAutofill="no"
+            app:layout_constraintBottom_toTopOf="@+id/edtEmpSalary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtEmpSalary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/hint_emp_salary"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            app:layout_constraintBottom_toTopOf="@+id/edtMonth"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmpId"
+            app:layout_constraintStart_toStartOf="@+id/edtEmpId"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmpId" />
+
+        <EditText
+            android:id="@+id/edtMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="@string/hint_date"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddSalary"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmpSalary"
+            app:layout_constraintStart_toStartOf="@+id/edtEmpSalary"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmpSalary"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnAddSalary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_salary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/edtMonth"
+            app:layout_constraintStart_toStartOf="@+id/edtMonth"
+            app:layout_constraintTop_toBottomOf="@+id/edtMonth" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
